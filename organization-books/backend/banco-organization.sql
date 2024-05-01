@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 11-Ago-2023 às 00:00
+-- Generation Time: 01-Maio-2024 às 17:46
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -33,15 +33,8 @@ CREATE TABLE `alugueis` (
   `cod_liv` varchar(100) NOT NULL,
   `cod_leitor` varchar(100) NOT NULL,
   `dt_retirada` date NOT NULL,
-  `dt_entrega` date NOT NULL
+  `dt_entrega` date DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `alugueis`
---
-
-INSERT INTO `alugueis` (`id_aluguel`, `cod_liv`, `cod_leitor`, `dt_retirada`, `dt_entrega`) VALUES
-(54, '1a864', '1097143764sp', '2023-08-02', '2023-08-17');
 
 -- --------------------------------------------------------
 
@@ -59,10 +52,7 @@ CREATE TABLE `autores` (
 --
 
 INSERT INTO `autores` (`id`, `nome`) VALUES
-(9, 'David Nicholls'),
-(8, 'Antoine De Saint-Exupery'),
-(7, 'Anne Frank'),
-(29, 'Agatha Christie');
+(30, 'Machado de Assis');
 
 -- --------------------------------------------------------
 
@@ -80,9 +70,7 @@ CREATE TABLE `editora` (
 --
 
 INSERT INTO `editora` (`id`, `nome`) VALUES
-(10, 'Escala'),
-(9, 'Intrinseca'),
-(11, 'BestBolso');
+(12, 'Moderna');
 
 -- --------------------------------------------------------
 
@@ -98,13 +86,6 @@ CREATE TABLE `leitores` (
   `leitor_tel` varchar(20) NOT NULL,
   `leitor_email` varchar(80) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `leitores`
---
-
-INSERT INTO `leitores` (`id_seg`, `id_leitor`, `leitor_nome`, `leitor_aluno_prof`, `leitor_tel`, `leitor_email`) VALUES
-(39, '1097143764sp', 'Junior', 'Aluno', '(18) 99168-9799', 'washington.juniin2018@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -122,16 +103,6 @@ CREATE TABLE `livros` (
   `isbn` varchar(20) NOT NULL,
   `liv_genero` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `livros`
---
-
-INSERT INTO `livros` (`id_seg`, `id_liv`, `liv_nome`, `liv_autor`, `liv_editora`, `liv_edicao`, `isbn`, `liv_genero`) VALUES
-(12, '1a999', 'Por Lugares Increveis', 'Agatha Christie', 'Escala', '1', '978-65-5565-116-4', 'romance'),
-(10, '1a864', 'Um Dia', 'David Nicholls', 'Intrinseca', '1', '978-85-8057-045-8', 'romance'),
-(9, '1a865', 'O Pequeno Principe', 'Antoine De Saint-Exupery', 'Escala', '1', '080', ''),
-(8, '1a863', 'O Diario de Anne Frank', 'Anne Frank', 'BestBolso', '37', '978-85-7799-000-9', 'fatos_reais');
 
 --
 -- Indexes for dumped tables
@@ -181,27 +152,27 @@ ALTER TABLE `livros`
 -- AUTO_INCREMENT for table `alugueis`
 --
 ALTER TABLE `alugueis`
-  MODIFY `id_aluguel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id_aluguel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 --
 -- AUTO_INCREMENT for table `autores`
 --
 ALTER TABLE `autores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT for table `editora`
 --
 ALTER TABLE `editora`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `leitores`
 --
 ALTER TABLE `leitores`
-  MODIFY `id_seg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id_seg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id_seg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;COMMIT;
+  MODIFY `id_seg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

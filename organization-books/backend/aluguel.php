@@ -48,7 +48,6 @@
         $_SESSION['nome_leitor'] = $dados['leitor_nome'];
     }
 
-
     // Se o leitor e o livro não esta cadastrado, não tem porquê salvar no banco!!
 
     if($registroLivro != 0 && $registroLeitor != 0){

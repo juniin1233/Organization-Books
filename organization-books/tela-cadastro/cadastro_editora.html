@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+</html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/tela-cadastro.css">
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <link rel="stylesheet" href="../style/botao.css">
+    <style>
+        @media screen and (min-width: 768px) and (max-width: 992px) { /*Tablet*/
+            #div_main{
+                padding: 200px 0 20px 0;
+            
+            }
+        }
+        form{
+            margin-top: 15%;
+        }
+
+        #box-meio{
+            margin-bottom: 10%;
+        }
+    </style>
+    <title>Organization Books</title>
+</head>
+<body>
+   <main>
+
+    <!-- Fundo Padrão de Todas as Telas -->
+
+    <div id="tela_principal">
+        <div id="img"></div>
+    </div>
+
+    <!-- Parte do Corpo -->
+
+    <div id="div_main">
+        <h1>Organization Books</h1>
+        <h2>Cadastro de Editora</h2>
+        <form action="../backend/cadastro_editora.php" method="post">
+            <div class="box" id="box-meio">
+                <div class="inputBox">
+                    <input type="text" name="editora" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome</label>
+                </div>
+            </div>
+            <div id="box-button">
+                <input type="submit" value="Cadastrar" id="button">
+            </div>
+        </form>
+    </div>
+   </main>
+   <a href="../tela_cadastro.html" id="voltar"><img src="../img/voltar.png" alt="voltar"></a>
+   <a href="../tela-cadastrada/relatorio.html" id="relatorio">
+       <img src="../img/livros-relatorios.png" alt="feito">
+   </a>
+</body>
+</html>

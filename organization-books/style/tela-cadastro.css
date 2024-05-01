@@ -1,0 +1,37 @@
+h1{
+    font-size: 32px;
+    margin-bottom: -6px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: 'Laila', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#button{
+    margin-top: 50px;
+}
+
+#livro_button, #livro_button a {
+    background-color: #D99A4E;
+    color: white;
+}
+
+#livro_button:hover{
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+#leitor_button, #leitor_button a {
+    background-color: white;
+    color: #D99A4E;
+}
+
+#leitor_button:hover{
+    border: 3px solid #D99A4E;
+    cursor: pointer;
+}
+

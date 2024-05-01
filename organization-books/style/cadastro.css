@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kodchasan&display=swap');
+
+
+
+.box{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+#box-meio{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.inputBox{
+    width: 456px;
+    position: relative;
+}
+
+.inputBox #date{
+    font-size: 50 px;
+}
+
+.inputUser{
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.463);
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+}
+.labelInput{
+    font-size: 28px;
+    font-family: 'Kodchasan', sans-serif;
+    color: rgba(255, 255, 255, 0.463);
+    position: absolute;
+    top: -13px;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -30px;
+    font-size: 20px;
+}
+
+.inputUser option{
+    font-size: 20px;
+}
+
+#box-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    width: 180px;
+    height: 71px;
+
+    font-family: 'Laila', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 61px;
+
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: 1.78431px solid #FFFFFF;
+    border-radius: 17.8431px;
+    transition: 0.3s ease-out;
+}
+
+#button:hover{
+    background-color: #D99A4E;
+}
+

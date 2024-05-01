@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300;400&family=Laila:wght@300;400;500&display=swap');
+
+
+/* Estilo Padrão de todas as telas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-family: serif;
+}
+
+
+#tela_principal{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #593F1E, #732407);
+}
+
+#img{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/fundo.jpg');
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Centralização dos Botões */
+
+#div_main{
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Laila', sans-serif;
+    font-weight: 300;
+}
+
+#button{
+    margin-top: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.button{
+    width: 340px;
+    height: 90px;
+    margin-top: 30px;
+    border-radius: 11.12px;
+    box-shadow: 1.55px 6.19px 30.9px rgba(0, 0, 0, 0.48);
+    border: none;
+}
+
+#button a{
+    text-decoration: none;
+    font-family: 'Laila', sans-serif;
+    font-size: 27px;
+}
+
+#cadastrar_button, #cadastrar_button a {
+    background-color: #D99A4E;
+    color: white;
+}
+
+#cadastrar_button:hover{
+    border: 3px solid white;
+    cursor: pointer
+;}
+
+#alugar_button, #alugar_button a {
+    background-color: white;
+    color: #D99A4E;
+}
+
+#alugar_button:hover{
+    border: 3px solid #D99A4E;
+    cursor: pointer;
+}
+
+#alugar_button{
+    box-shadow: 5px 5px 24px rgba(0, 0, 0, 0.196);
+}

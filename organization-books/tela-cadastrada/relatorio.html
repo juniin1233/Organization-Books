@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/tela-cadastro.css">
+    <link rel="stylesheet" href="../style/relatorios.css">
+    <link rel="stylesheet" href="../style/botao.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Organization Books</title>
+    <style>
+        #tabelaFiltros {
+            /* background-color: red; */
+            height: 200px;
+            width: 100%;
+            margin-top: 7%;
+            position: relative;
+        }
+
+        .caixa{
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0;
+        }
+
+        .caixa label{
+            font-size: 25px;
+            font-family: 'Laila', sans-serif;
+            color: white;
+        }
+
+        #filtro {
+            /* background-color: blue; */
+            width: 380px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        #tabelaFiltros #filtro .selecao {
+            width: 200px;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            outline: none;
+        }
+
+        .selecao option{
+            background-color: #D99A4E; 
+            text-align: center;
+        }
+
+        #pesquisar{
+            padding: 10px 20px;
+            margin-top: 30px;
+
+            border-radius: 8px;
+            border: 2px solid #D99A4E;
+            box-shadow: 5px 5px 24px rgba(0, 0, 0, 0.5);
+
+            color: #FFF;
+            font-size: 1.2rem;
+            background-color: transparent;
+
+            transition: 1s;
+        }
+
+        #pesquisar:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: #593F1E;
+            /* Largura da barra de rolagem */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #732407;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body id="corpo">
+    <main>
+        <div id="titulosFixo">
+            <h1>Organization Books</h1>
+            <h2>Relatòrios</h2>
+
+            <div id="tabelaFiltros">
+                <form action="filtro.php" id="filtro" method="post">
+                    <div class="caixa">
+                        <label for="selecao-tema">Classificar Por:</label>
+                        <select name="tema" class="selecao">
+                            <option value="0" selected disabled>Selecione</option>
+                            <option value="1">Livros</option>
+                            <option value="2">Editora</option>
+                            <option value="3">Leitor</option>
+                            <option value="4">Autor</option>
+                        </select>
+                    </div>
+                    <div class="caixa">
+                        <label for="">Ordenar:</label>
+                        <select name="ordem" class="selecao">
+                            <option value="" selected disabled>Selecione</option>
+                            <option value="1">A - Z</option>
+                            <option value="2">Z - A</option>
+                            <option value="3">Crescente</option>
+                            <option value="4">Decrescente</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Filtrar" id="pesquisar">
+                </form>
+            </div>
+            
+        </div>
+    </main>
+    <a href="../tela_cadastro.html" id="voltar"><img src="../img/voltar.png" alt="voltar"></a>
+</body>
+
+</html>

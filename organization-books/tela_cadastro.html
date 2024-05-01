@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/tela-cadastro.css">
+    <link rel="stylesheet" href="style/botao.css">
+    <title>Organization Books</title>
+    <style>
+        @media screen and (min-width: 768px) and (max-width: 1324px) {
+            #div_main{
+                padding: 80px 0 20px 0;
+            }
+        }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            transition: .5s;
+        } 
+        button:hover{
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <!-- Fundo Padrão de Todas as Telas -->
+
+        <div id="tela_principal">
+            <div id="img"></div>
+        </div>
+
+        <!-- Parte do Corpo -->
+
+        <div id="div_main">
+            <h1>Organization Books</h1>
+            <h2>Cadastro</h2>
+            <div id="button">
+                <button class="button" id="livro_button">
+                    <a href="tela-cadastro/cadastro_livro.php"><p>Livro</p></a>
+                </button>
+                <button class="button" id="leitor_button">
+                    <a href="tela-cadastro/cadastro_leitor.html"><p>Leitor</p></a>
+                </button>
+                <button class="button" id="livro_button">
+                    <a href="tela-cadastro/cadastro_editora.html"><p>Editora</p></a>
+                </button>
+                <button class="button" id="leitor_button">
+                    <a href="tela-cadastro/cadastro_autor.html"><p>Autor</p></a>
+                </button>
+            </div>
+        </div>
+    </main>
+    <a href="index.html" id="voltar"><img src="img/voltar.png" alt="voltar"></a>
+    <a href="tela-cadastrada/relatorio.html" id="relatorio">
+        <img src="img/livros-relatorios.png" alt="feito">
+    </a>
+</body>
+
+</html>

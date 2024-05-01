@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/botao.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Organization Books</title>
+    <style>
+         @media screen and (min-width: 768px) and (max-width: 1324px) { /*Tablet*/
+            #div_main{
+                padding: 0;
+            }
+        }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        a#imprimir img{
+            width: 40px;
+            height: 40px;
+        }
+        button{
+            transition: .5s;
+        } 
+        button:hover{
+            transform: scale(1.02);
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <!-- Fundo Padrão de Todas as Telas -->
+        
+        <div id="tela_principal">
+            <div id="img"></div>
+        </div>
+
+        <!-- Parte do Corpo -->
+
+        <div id="div_main">
+            <h1>Organization Books</h1>
+            <div id="button">
+                <button class="button" id="cadastrar_button">
+                    <a href="tela_cadastro.html" ><p>Cadastrar</p></a>
+                </button>
+                <button class="button" id="alugar_button">
+                    <a href="tela_alugar.php"><p>Alugar</p></a>
+                </button>
+            </div>
+        </div>
+    </main>
+    <a href="Passo a Passo.pdf" download="Passo a Passo" id="imprimir"><img src="img/question.png" alt="inf"></a>
+</body>
+
+</html>
